@@ -1,0 +1,271 @@
+.landing {
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(600px circle at 90% -5%, rgba(108, 92, 231, 0.14), transparent 60%),
+    radial-gradient(500px circle at 5% 20%, rgba(6, 199, 166, 0.14), transparent 60%),
+    var(--paper);
+}
+
+.landing__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 60px;
+}
+
+.landing__nav-links {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.landing__nav-links a:hover {
+  color: var(--violet);
+}
+
+.landing__hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  padding: 40px 60px 90px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.landing__hero h1 {
+  font-size: 3.1rem;
+  margin-top: 18px;
+  letter-spacing: -0.02em;
+}
+
+.landing__accent {
+  color: var(--violet);
+  position: relative;
+}
+
+.landing__lead {
+  margin-top: 22px;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.landing__hero-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.landing__hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.landing__hero-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow-lift);
+  transform: rotate(2deg);
+}
+
+.landing__hero-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.landing__hero-pct {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--aqua-deep);
+  font-size: 1.1rem;
+}
+
+.landing__roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 60px 100px;
+}
+
+.landing__role-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.landing__role-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.landing__role-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.landing__role-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.landing__role-card--teacher .landing__role-icon {
+  background: var(--violet-tint);
+  color: var(--violet-deep);
+}
+
+.landing__role-card--student .landing__role-icon {
+  background: var(--aqua-tint);
+  color: var(--aqua-deep);
+}
+
+.landing__role-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.landing__role-card > p {
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.landing__role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.landing__role-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.landing__role-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.landing__role-card--teacher .landing__role-list li::before {
+  background: var(--violet);
+}
+.landing__role-card--student .landing__role-list li::before {
+  background: var(--aqua);
+}
+
+.landing__role-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.landing__how {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 60px 110px;
+  text-align: center;
+}
+
+.landing__how h2 {
+  font-size: 2.1rem;
+  margin-top: 10px;
+  margin-bottom: 46px;
+}
+
+.landing__how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  text-align: left;
+}
+
+.landing__how-card {
+  background: var(--surface-alt);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+}
+
+.landing__how-card svg {
+  width: 26px;
+  height: 26px;
+  color: var(--violet-deep);
+  margin-bottom: 16px;
+}
+
+.landing__how-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.landing__how-card p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.landing__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 980px) {
+  .landing__hero {
+    grid-template-columns: 1fr;
+    padding: 20px 28px 60px;
+  }
+  .landing__hero h1 {
+    font-size: 2.3rem;
+  }
+  .landing__roles {
+    grid-template-columns: 1fr;
+    padding: 10px 24px 60px;
+  }
+  .landing__how {
+    padding: 10px 24px 70px;
+  }
+  .landing__how-grid {
+    grid-template-columns: 1fr;
+  }
+  .landing__nav {
+    padding: 22px 24px;
+  }
+  .landing__footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+  }
+}

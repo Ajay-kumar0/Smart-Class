@@ -1,0 +1,124 @@
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  margin-bottom: 22px;
+}
+
+.detail-back:hover {
+  color: var(--ink);
+}
+
+.detail-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 34px;
+  margin-bottom: 24px;
+  border-top: 4px solid var(--violet);
+}
+
+.detail-hero--violet { border-top-color: var(--violet); }
+.detail-hero--aqua { border-top-color: var(--aqua); }
+.detail-hero--coral { border-top-color: var(--coral); }
+.detail-hero--amber { border-top-color: var(--amber); }
+
+.detail-hero h2 {
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.detail-hero__teacher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.detail-hero__pct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--aqua-deep);
+}
+
+.detail-hero__pct span {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.detail-hero__pct small {
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-grid-card {
+  padding: 30px 34px;
+  margin-bottom: 24px;
+}
+
+.detail-grid-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.detail-grid-card__head h3 {
+  font-size: 1.1rem;
+}
+
+.detail-grid-card .auth__legend {
+  color: var(--ink-soft);
+  margin-top: 0;
+}
+
+.detail-grid-card .dot--none {
+  border-color: var(--line);
+}
+
+.detail-list {
+  padding: 30px 34px;
+}
+
+.detail-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.detail-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.detail-list__row:first-of-type {
+  border-top: none;
+}
+
+@media (max-width: 640px) {
+  .detail-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

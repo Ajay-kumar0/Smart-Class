@@ -1,0 +1,49 @@
+.punch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+  gap: 5px;
+}
+
+.punch {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: var(--surface-alt);
+  border: 1.5px solid var(--line);
+}
+
+.punch--present {
+  background: var(--aqua);
+  border-color: var(--aqua-deep);
+}
+.punch--absent {
+  background: var(--coral);
+  border-color: var(--coral-deep);
+}
+.punch--late {
+  background: var(--amber);
+  border-color: var(--amber-deep);
+}
+.punch--none {
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--line);
+}
+
+.punch-grid--sm {
+  grid-template-columns: repeat(auto-fill, minmax(7px, 1fr));
+  gap: 3px;
+}
+
+.punch-grid--sm .punch {
+  border-radius: 2.5px;
+}
+
+.punch-grid--lg {
+  grid-template-columns: repeat(auto-fill, minmax(22px, 1fr));
+  gap: 8px;
+}
+
+.punch-grid--lg .punch {
+  border-radius: 6px;
+  border-width: 2px;
+}
